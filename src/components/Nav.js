@@ -6,12 +6,13 @@ const LINKS = [
     {to: '/starred', text: 'Starred page'}
 ]
 
-export const Nav = () => {
-  return (
+const Nav = () => (
     <div>
       <ul>
           {LINKS.map (item =>  <li key={item.to}> <Link to={item.to}>{item.text}</Link></li>)}
       </ul>
     </div>
-  );
-};
+
+)
+
+export default Nav
